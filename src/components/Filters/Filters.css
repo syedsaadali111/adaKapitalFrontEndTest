@@ -1,0 +1,75 @@
+.container {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 21px 0 21px 0;
+    margin-top: 36px;
+    font-size: 16px;
+}
+
+/*RADIO BUTTON STYLES*/
+.openContainer {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #002B56;
+  letter-spacing: 1px;
+}
+
+/* Hide the browser's default radio button */
+.openContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radioButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  /* background-color: #eee; */
+  border-radius: 50%;
+  border: 1px solid #C8C8C8;
+}
+
+/* On mouse-over, add a grey background color */
+.openContainer:hover input ~ .radioButton {
+  background-color: #ddd;
+}
+
+/* When the radio button is checked, add a blue background */
+.openContainer input:checked ~ .radioButton {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioButton:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.openContainer input:checked ~ .radioButton:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.openContainer .radioButton:after {
+ 	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+  background: #002B56;
+}
+/*RADIO BUTTON STYLES END*/

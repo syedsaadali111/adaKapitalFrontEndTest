@@ -1,0 +1,20 @@
+.heading {
+    color: #333;
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 100;
+    letter-spacing: 0.96px;
+}
+
+.header {
+    margin-top: 36px;
+}
+
+.description {
+    width: 57%;
+    color: #666;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 24px;
+    letter-spacing: 0.92px;
+}
