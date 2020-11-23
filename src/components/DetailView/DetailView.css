@@ -1,0 +1,45 @@
+.header {
+    margin-top: 36px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.heading {
+    color: #333;
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 100;
+    letter-spacing: 0.96px;
+}
+
+.infoBar {
+    color: #666;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.92px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBar .right {
+    position: relative;
+}
+
+.dotOpen {
+    background-color: #00E8A4;
+}
+
+.dotClose {
+    background-color: #FF3548;
+}
+
+.dot {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-30px, -50%);
+}

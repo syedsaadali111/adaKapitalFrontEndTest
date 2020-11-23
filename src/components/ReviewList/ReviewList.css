@@ -1,0 +1,9 @@
+.container {
+    margin-top: 48px;
+}
+
+.count {
+    font-size: 22px;
+    line-height: 32px;
+    color: #666;    
+}

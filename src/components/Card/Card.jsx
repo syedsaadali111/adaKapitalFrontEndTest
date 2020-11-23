@@ -3,22 +3,21 @@ import styles from './Card.css';
 import { withStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+import {Link} from 'react-router-dom';
 
 const StyledRating = withStyles({
     iconFilled: {
       color: '#002B56'
     },
     root: {
-      marginTop: "8px",
+      marginTop: "16px",
     }
 })(Rating);
 
 const Card = () => {
     return (
         <div className={styles.container}>
-            {/* <div className={styles.imgContainer}> */}
-                <img src="https://picsum.photos/300" className={styles.resImg}/>
-            {/* </div> */}
+            <img src="https://picsum.photos/300" className={styles.resImg}/>
             <h3 className={styles.resName}>Restaurant 1</h3>
             <StyledRating
                 value={3}
@@ -35,9 +34,12 @@ const Card = () => {
                     <span>OPEN NOW</span> 
                 </div>
             </div>
-            <button className={styles.btnLearnMore}>
-                LEARN MORE
-            </button>
+
+            <Link to="/details">
+                <button className={styles.btnLearnMore}>
+                    LEARN MORE
+                </button>
+            </Link>
         </div>
     );
 }
