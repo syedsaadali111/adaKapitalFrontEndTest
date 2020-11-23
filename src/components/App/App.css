@@ -18,3 +18,31 @@
     margin-top: 24px;
     letter-spacing: 0.92px;
 }
+
+.btnLoadMore {
+    width: max(30%, 416px);
+    height: 48px;
+    border: 1px solid #002B56;
+    background-color: white;
+    color: #002B56;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin: auto;
+    transition: all ease-out .2s;
+}
+
+.btnLoadMore:focus {
+    outline: none;
+}
+
+.btnLoadMore:hover {
+    color: white;
+    background-color: #002B56;
+    cursor: pointer;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 80px;
+}

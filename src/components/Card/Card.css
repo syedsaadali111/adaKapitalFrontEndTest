@@ -1,0 +1,64 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 16px;
+    color: #757575;
+}
+
+.resImg {
+    width: 100%;
+    height: 228px;
+    object-fit: cover;
+}
+
+.resName {
+    margin-top: 16px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.dotOpen {
+    background-color: #00E8A4;
+}
+
+.dotClose {
+    background-color: #FF3548;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btnLearnMore {
+    width: 100%;
+    height: 48px;
+    background-color: #002B56;
+    color: white;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.btnLearnMore:focus {
+    outline: none;
+}
+
+.btnLearnMore:hover {
+    border: 1px solid #002B56;
+    color: #002B56;
+    background: white;
+}

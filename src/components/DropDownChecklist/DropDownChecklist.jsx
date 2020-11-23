@@ -22,10 +22,8 @@ const DropDownChecklist = ({ label, items, selected, setSelected}) => {
     useEffect( () => {
         if (isMenuOpen) {
             document.addEventListener('click', closeMenu);
-            console.log('listener added');
         } else {
             document.removeEventListener('click', closeMenu); //closeMenu() was memoized so that it can be passed correctly here!
-            console.log('listener removed');
         }
     }, [isMenuOpen])
 

@@ -1,0 +1,31 @@
+.container {
+    margin-top: 64px;
+}
+
+.heading {
+    color: #333;
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.cardList {
+    margin-top: 43px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+    column-gap: 30px;   
+}
+
+@media only screen and (max-width: 1600px) {
+    .cardList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .cardList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

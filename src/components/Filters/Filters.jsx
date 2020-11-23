@@ -27,22 +27,23 @@ const Filters = () => {
         <div className={styles.container}>
             <div className={styles.left}>
                 <div className={styles.label}>
-                    <span>Filter by:</span>
+                    <span>Filter By:</span>
                 </div>
-                <div className={styles.open}>
+                <div className={styles.filterItem}>
                     <label className={styles.openContainer}>Open Now
                         <input type="checkbox" name="radio" checked={isOpen} onChange={() => setIsOpen(!isOpen)}/>
                         <span className={styles.radioButton}></span>
                     </label>
                 </div>
-                <div>
-                    <DropDownChecklist label="Categories" items={categories}/>
+                <div className={styles.filterItem}>
+                    <DropDownChecklist label="Price" items={prices}/>
                 </div>
-                <div>
-                    <DropDownChecklist label="Prices" items={prices}/>
+                <div className={styles.filterItem}>
+                    <DropDownChecklist label="Categories" items={categories}/>
                 </div>
             </div>
             <div className={styles.right}>
+                <button className={styles.btnClear}>CLEAR ALL</button>
             </div>
         </div>
     );
