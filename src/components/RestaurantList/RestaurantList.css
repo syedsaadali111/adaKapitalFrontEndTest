@@ -13,7 +13,7 @@
 .cardList {
     margin-top: 43px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 80px;
     column-gap: 30px;   
 }

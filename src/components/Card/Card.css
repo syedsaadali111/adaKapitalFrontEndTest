@@ -1,10 +1,15 @@
+.container {
+    position: relative;
+    height: 428px;
+}
+
 .info {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.5px;
-    margin-top: 16px;
+    margin-top: 9px;
     color: #757575;
 }
 
@@ -20,13 +25,17 @@
     letter-spacing: 1px;
     line-height: 28px;
     font-weight: 100;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }
 
 .dotOpen {
     background-color: #00E8A4;
 }
 
-.dotClose {
+.dotClosed {
     background-color: #FF3548;
 }
 
@@ -39,6 +48,8 @@
 }
 
 .btnLearnMore {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 48px;
     background-color: #002B56;

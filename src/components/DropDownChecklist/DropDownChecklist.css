@@ -12,6 +12,18 @@
 .header .symbol{
     color: #969696;
     float: right;
+    line-height: 9px;
+    margin-top: 7px;
+    transition: all ease-out 0.2s
+}
+
+.symbol.closed {
+    margin-top: 7px;
+}
+
+.symbol.open {
+    margin-top: 0px;
+    transform: rotate(180deg);
 }
 
 .header .label {
@@ -55,7 +67,8 @@
   /* Create a custom check box */
   .checkBox {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translate(0, -50%);
     left: 0;
     height: 16px;
     width: 16px;

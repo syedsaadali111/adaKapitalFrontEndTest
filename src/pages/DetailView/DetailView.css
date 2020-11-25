@@ -30,7 +30,7 @@
     background-color: #00E8A4;
 }
 
-.dotClose {
+.dotClosed {
     background-color: #FF3548;
 }
 
@@ -42,4 +42,25 @@
     position: absolute;
     top: 50%;
     transform: translate(-30px, -50%);
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 80px;
+    overflow-anchor: none;
+}
+
+.labelLoading {
+    width: max(30%, 416px);
+    height: 48px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #002b56;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+.mapCanvas {
+    margin-top: 48px;
 }

@@ -10,32 +10,50 @@ const StyledRating = withStyles({
       color: '#002B56'
     },
     root: {
-      marginTop: "16px",
+      marginTop: "6px",
     }
 })(Rating);
 
-const Card = () => {
+const Card = ( {restaurant: {id, review_count, name, rating, price, categories, is_closed, image_url, coordinates: {latitude, longitude}}}) => {
+
     return (
         <div className={styles.container}>
-            <img src="https://picsum.photos/300" className={styles.resImg}/>
-            <h3 className={styles.resName}>Restaurant 1</h3>
+            <img src={image_url} className={styles.resImg}/>
+            <h3 className={styles.resName}>{name}</h3>
             <StyledRating
-                value={3}
+                value={rating}
+                precision={0.5}
                 max={5}
                 readOnly
                 emptyIcon={<StarBorderIcon  style={{fill: "#002B56"}} fontSize="inherit" />}
             />
             <div className={styles.info}>
                 <div className={styles.left}>
-                    <span>Thai • $$$$</span>
+                    <span>{categories[0].title} • {price}</span>
                 </div>
                 <div className={styles.right}>
-                    <span className={`${styles.dotOpen} ${styles.dot}`}></span>
-                    <span>OPEN NOW</span> 
+                    {is_closed ? (
+                        <>
+                            <span className={`${styles.dotClosed} ${styles.dot}`}></span>
+                            <span>CLOSED</span>
+                        </>
+                    ) : (
+                        <>
+                            <span className={`${styles.dotOpen} ${styles.dot}`}></span>
+                            <span>OPEN NOW</span>
+                        </>
+                    )} 
                 </div>
             </div>
 
-            <Link to="/details">
+            <Link to={{
+                    pathname: `/details/${id}`,
+                    state: {
+                        name, rating, price, is_closed,
+                        category: categories[0].title,
+                        latitude, longitude
+                    }
+                }}>
                 <button className={styles.btnLearnMore}>
                     LEARN MORE
                 </button>

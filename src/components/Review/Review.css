@@ -19,6 +19,7 @@
     height: 80px;
     float: left;
     margin-right: 32px;
+    object-fit: cover;
 }
 
 .name {
