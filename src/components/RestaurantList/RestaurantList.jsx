@@ -4,9 +4,6 @@ import styles from './RestaurantList.css';
 
 
 const RestaurantList = ( {restaurants} ) => {
-
-    
-
     return (
         <div className={styles.container}>
             <h1 className={styles.heading}>All Restaurants</h1>
